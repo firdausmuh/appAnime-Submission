@@ -26,7 +26,6 @@ class MainActivity : AppCompatActivity() {
 
         list.addAll(getListAnime())
         showRecyclerList()
-
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -43,25 +42,6 @@ class MainActivity : AppCompatActivity() {
         }
         return super.onOptionsItemSelected(item)
     }
-
-//    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-//        when (item.itemId) {
-//            R.id.action_list -> {
-//                val intent = Intent(this, listAnime::class.java)
-//                startActivity(intent)
-//            }
-//
-//            R.id.action_grid -> {
-//                val intent = Intent(this, GridLayoutManager::class.java)
-//                startActivity(intent)
-//            }
-//            R.id.action_about -> {
-//                val intent = Intent(this, AboutActivity::class.java)
-//                startActivity(intent)
-//            }
-//        }
-//        return super.onOptionsItemSelected(item)
-//    }
 
     private fun getListAnime(): ArrayList<Anime> {
         val dataName = resources.getStringArray(R.array.data_name)

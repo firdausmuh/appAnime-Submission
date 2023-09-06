@@ -23,8 +23,6 @@ class DetailActivity : AppCompatActivity() {
             binding.labelTv.text = anime.label
             binding.nicknameTv.text = anime.nickname
             binding.descriptionTv.text = anime.description
-
         }
-
     }
 }
